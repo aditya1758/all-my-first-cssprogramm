@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> simple calculater</title>
+</head>
+<body>
+<h1> calculater</h1>
+
+<input type ="number" id="num1" placeholder="first number">
+<input type="number" id="num2" placeholder="second number">
+
+<br><br>
+
+
+<button onclick="calculate('add')">Add</button>
+<button onclick="calculate('subtract')">subtract</button> 
+<button onclick="calculate('multiply')">multiply</button>
+<button onclick="calculate('divide')">divide</button>
+
+<p id="calcresult"></p>
+
+<script>
+    function calculate(operation) {
+	    var num1 =parseFloat(document.getElementById('num1').value);
+		var num2 =parseFloat(document.getElementById('num2').value);
+		var result;
+		
+		switch(operation) {
+		  case'add':
+		     result = num1 + num2;
+			 break;
+		case 'subtract':		
+		result = num1 - num2;
+		break;
+		case 'multiply':
+		    result = num1 * num2;
+			break;
+			case'divide':
+			   result = num1 / num2;
+			   break;
+}
+
+       document.getElementById('calcresult').innerText = "result: " + result;
+}	   
+   </script>
+   </body>
+   </html>   
+			   
+			

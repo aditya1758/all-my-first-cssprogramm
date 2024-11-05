@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+adi</title>
+</head>
+<body>
+<h1> add two numbers</h1>
+<p>enter two numbers below:</p>
+
+
+<input type ="number" id="number1" placeholder="enter first number">
+<input type="number" id="number2" placeholder="enter second number ">
+<button onclick="addnumbers()">add</button>
+
+<p id="result"></p>
+
+<script>
+  function addnumbers() {
+  // get the values from the input fieldset
+var num1 =document.getElementbyId('number1').value;
+var num2 =document.getElementbyId('number2').value; 
+
+// convert the input values to numbers
+num1 = parseFloat (num1);
+num2 = parseFloat(num2);
+
+//Add the numbers
+var sum = num1+num2;
+
+//display the result 
+document.getElementbyId('result').innerText="the sum is"; + sum;
+}
+</script>
+</body>
+</html>

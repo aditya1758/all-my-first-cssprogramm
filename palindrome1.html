@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> adi </title>
+</head>
+<body>
+<h1>palindrome checker </h1>
+
+<input type="text" id="wordInput" placeholder="Enter a word">
+<button onclick="checkpalindrome()">check</button>
+
+<p id="palindromeresult"></p>
+
+<script>
+    function checkpalindrome(){
+	var word = document.getElementById('wordInput').value;
+	var reversedword=word.split('').reverse().join('');
+	
+	if (word=== reversedword) {
+	document.getElementById('palindromeresult').innerText =word +" is a palindrome";
+	} else {
+	document.getElementById('palindromeresult').innerText =word +" is not a palindrome";
+	
+}
+}
+
+</script>
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

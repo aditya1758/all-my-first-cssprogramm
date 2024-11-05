@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>
+adi</title>
+</head>
+<body>
+<h1> add two numbers</h1>
+<p>enter two numbers below:</p>
+
+
+<input type ="number" id="number1" placeholder="enter first number">
+<input type="number" id="number2" placeholder="enter second number ">
+<button onclick="addnumbers()">add</button>
+
+<p id="result"></p>
+
+<script>
+  function addnumbers() {
+var num1=document.getElementById('number1').value;
+var num2 =document.getElementById('number2').value; 
+
+num1 = parseFloat (num1);
+num2 = parseFloat(num2);
+
+
+var sum = num1+num2;
+
+
+document.getElementById('result').innerText="the sum is:" + sum;
+}
+</script>
+</body>
+</html>
